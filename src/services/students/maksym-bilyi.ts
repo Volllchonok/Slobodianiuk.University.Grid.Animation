@@ -86,10 +86,10 @@ function generateFrames(): IFrame[] {
     for (let frameNumber = 0; frameNumber < Constants.MaxTotalFrames; frameNumber++) {
         const pixels: IPixelState[] = [];
 
-        // Вычисляем текущий Y-координату самолета, зацикливая его в пределах экрана
+        
         const currentY = frameNumber % ScreenHeight;
 
-        // Создаём самолет
+       
         for (let i = 0; i < createAirplaneHeader().pixels.length; i++) {
             const { x, y, color } = createAirplaneHeader().pixels[i];
             pixels.push({ x: x, y: y + currentY, color: color });
