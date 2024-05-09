@@ -4,6 +4,7 @@ import Constants from "../../constants/constants";
 import IFrame from "../../models/frame";
 import IPixelState from "../../models/pixel-state";
 import { Colour } from "../../models/colour";
+
 const ScreenHeight = 16;
 const ScreenWidth = 16; 
 const PlaneWidth = 8; 
